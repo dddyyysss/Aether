@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Soar with local AI.</strong><br>
-  A stunning, localized, highly extensible general-purpose AI Agent for Android, iOS and macOS.
+  A stunning, localized, highly extensible general-purpose AI Agent for Android.
 </p>
 
 <p align="center">
@@ -18,10 +18,6 @@
 </p>
 
 <p align="center">
-  <a href="https://apps.apple.com/app/id6793855391">
-    <img alt="Download on the App Store" height="48" src="public/badge-appstore.svg" />
-  </a>
-  &nbsp;
   <a href="https://github.com/Zhou-Shilin/Aether/releases">
     <img alt="Get the APK on GitHub" height="48" src="public/badge-android.svg" />
   </a>
@@ -44,7 +40,7 @@
 
 > "When the great Peng bird journeys to the Southern Ocean, it flaps the water for three thousand miles, spiraling upward on a whirlwind (*Aether/Fuyao*) to ninety thousand miles, and travels for six months before resting."
 
-**Aether** is dedicated to bringing a modern, local AI Agent experience to mobile and desktop devices (Android, iOS, and macOS). Built on top of the Pi framework, it pairs a minimalist, polished UI with immense extensibility, seamless tool calling, and full extension ecosystem support.
+**Aether** is dedicated to bringing a modern, local AI Agent experience to Android. Built on top of the Pi framework, it pairs a minimalist, polished UI with immense extensibility, seamless tool calling, and full extension ecosystem support.
 
 ## 🧩 High Extensibility
 
@@ -83,7 +79,7 @@ Aether's UI and interactions are heavily inspired by excellent, mature applicati
 - **Stunning UI & Silky Smooth Interactions**: Distilling the design essence of top-tier apps like ChatGPT to create a minimalist, modern, and elegant interface.
 - **Pi Harness Kernel**: Powered by the Pi framework, providing the widest LLM provider compatibility and a lightweight, highly efficient Agent execution engine.
 - **Extreme Extensibility**: Inherits Pi's complete extension model while providing Aether's proprietary Script Extensions and Native Mods system to deeply customize mobile UI, settings, composer widgets, and runtime behavior.
-- **Built-in Alpine VM**: Includes an automatically installed Alpine Linux environment to run shell commands and tools out of the box.
+- **Built-in Alpine VM**: Includes an Alpine Linux environment that you initialize in the app to run shell commands and tools.
 - **System File Manager Access** (Android): After initializing Alpine, select **Aether (Alpine)** in the system Files app or SAF document picker's sidebar to browse the environment and `/workspace`, create, edit, rename, delete, or copy files between Alpine and device storage. Changes apply directly to the files used by proot. System mounts such as `/dev`, `/proc`, and `/sys` are excluded.
 - **Extensible Host Control**: Supports optional Shizuku and Termux integration for direct device manipulation and automation. (Android only)
 

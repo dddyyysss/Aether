@@ -691,6 +691,5 @@ history, inline attachments, raw provider payloads, or tool output. On Android,
 `agentModeEnabled`, `chromeEnabled`, `selectedModelKey`, `message_count`, and
 `last_message_at_millis`. Titles and previews are capped at 4,000 characters.
 The previous `sessions[].messages` field is no longer included; use conversation
-export when full history is needed. iOS contexts already omit conversation
-history. On both platforms `state.get(path)` returns `{ path, value }` and builds
-only the requested top-level state field.
+export when full history is needed. `state.get(path)` returns `{ path, value }`
+and builds only the requested top-level state field.

@@ -19,19 +19,6 @@ body:
         - label: I have removed secrets and personal information. / 我已移除密钥和个人信息。
           required: true
 
-  - type: dropdown
-    id: platform
-    attributes:
-      label: Target platform / 目标平台
-      description: Select all that apply. / 可多选。
-      multiple: true
-      options:
-        - Android
-        - iOS
-        - macOS
-    validations:
-      required: true
-
   - type: textarea
     id: describe-bug
     attributes:

@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Soar with local AI.</strong><br>
-  高颜值、高扩展性、本地化的跨平台通用 AI Agent（Android / iOS / macOS）
+  高颜值、高扩展性、本地化的通用 AI Agent（Android）
 </p>
 
 <p align="center">
@@ -19,10 +19,6 @@
 </p>
 
 <p align="center">
-  <a href="https://apps.apple.com/app/id6793855391">
-    <img alt="Download on the App Store" height="48" src="public/badge-appstore.svg" />
-  </a>
-  &nbsp;
   <a href="https://github.com/Zhou-Shilin/Aether/releases">
     <img alt="Get the APK on GitHub" height="48" src="public/badge-android.svg" />
   </a>
@@ -49,7 +45,7 @@
 
 > 鹏之徙于南冥也，水击三千里，抟扶摇而上者九万里，去以六月息者也。
 
-**Aether 扶摇** 致力于为移动端及桌面设备（Android、iOS、macOS）提供现代化的本地 AI Agent 体验。基于 Pi 框架内核，在保持极简轻量 UI 的同时，提供了极其强大的扩展性与无缝的工具调用体验。
+**Aether 扶摇** 致力于为 Android 设备提供现代化的本地 AI Agent 体验。基于 Pi 框架内核，在保持极简轻量 UI 的同时，提供了极其强大的扩展性与无缝的工具调用体验。
 
 ## 🧩 极高扩展性
 
@@ -88,7 +84,7 @@ Aether 的 UI 和交互大量参考了 ChatGPT、Codex CLI/App、Gemini、Poco A
 - **超高颜值，丝滑交互**: 凝聚 ChatGPT 等优秀应用的设计精华，打造极简、现代、优雅的界面。
 - **Pi Harness 内核**: 采用 Pi 框架，拥有最广泛的 Model Provider 兼容性，以及最轻量、最高效的 Agent 执行引擎。
 - **极致的可扩展性**: 原生继承 Pi 的强大扩展体系，并提供独有的 Aether Script Extensions 与 Native Mods，支持深度定制移动端 UI、原生设置页、输入框组件与运行逻辑。
-- **内置 Alpine 虚拟机**: 自动安装 Alpine Linux 运行环境，开箱即用，支持各种 Linux 工具与命令行操作。
+- **内置 Alpine 虚拟机**: 内置 Alpine Linux 运行环境，在应用内初始化后即可使用各种 Linux 工具与命令行操作。
 - **系统文件管理器接入**（Android）: 初始化 Alpine 后，在系统“文件”或 SAF 文件选择器侧栏选择 **Aether（Alpine）**，即可浏览环境目录和 `/workspace`，新建、编辑、重命名、删除文件，或与手机存储互相复制。修改直接作用于 proot 使用的文件；`/dev`、`/proc`、`/sys` 等系统挂载不对外提供。
 - **扩展主机控制**: 支持可选的 Shizuku 与 Termux 扩展，用于直接操纵和控制手机系统。（仅限 Android）
 

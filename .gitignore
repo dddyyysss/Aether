@@ -3,6 +3,7 @@
 build/
 **/build/
 **/.cxx/
+**/.kotlin/
 **/node_modules/
 
 # Local Android/IDE state
@@ -22,6 +23,10 @@ dist/
 *.key
 keystore.properties
 signing.properties
+
+# Local-only notes and design drafts (never commit)
+*.local.md
+local-docs/
 
 # Secrets and local service configuration
 .env

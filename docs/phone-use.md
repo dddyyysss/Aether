@@ -18,8 +18,6 @@ Phone Use tasks keep the existing task notification/foreground service active wh
 
 A one-time upgrade migration enables foreground Phone Use and disables Virtual Display. Subsequent explicit off choices persist. Existing selected Root/Shizuku providers are remembered for the secondary authorization page, and saved chat tool selections/imports remain compatible. Storage field names and the host tool identifiers `agent_display` and `aether_agent_mode_manage` remain compatible with old chats and extensions.
 
-iOS keeps device control unavailable: its public accessibility APIs do not let third-party apps read or operate other apps. Shared labels use Phone Use, and the native iOS settings/composer continue to omit this unsupported capability.
-
 ## Foreground feedback and Steer (Android only)
 
 During a running foreground Phone Use turn, leaving Aether displays an animated edge glow and a pale bottom commentary capsule. Returning to Aether, locking the screen, stopping the turn, disabling Phone Use, or enabling Virtual Display removes the feedback. The commentary and Steer capsule uses continuous corners; short text is vertically centered even at the minimum capsule height. Keyboard avoidance uses the Accessibility input-method window’s display-space bounds (not the small overlay’s often-zero IME Insets) and animates the capsule above that boundary. The border follows physical display corners and uses a bottom-up activation bloom before settling into a narrow moving color band. System animation preferences are respected.
@@ -41,7 +39,7 @@ Observations are bounded to 1,200 nodes and 48 levels. An explicit new observati
 
 ## Virtual Display orientation and fullscreen preview
 
-Android Virtual Display supports **Device default**, **Portrait**, and **Landscape** in Settings → Phone Use when Virtual Display is enabled. Device default preserves the physical display dimensions; portrait/landscape order the short/long edges. Changing the saved choice stops the managed display; relaunch the app afterwards. Foreground Accessibility uses the actual screen geometry and does not need this setting. iOS has no Android Virtual Display implementation; shared settings and data archives preserve the preference.
+Android Virtual Display supports **Device default**, **Portrait**, and **Landscape** in Settings → Phone Use when Virtual Display is enabled. Device default preserves the physical display dimensions; portrait/landscape order the short/long edges. Changing the saved choice stops the managed display; relaunch the app afterwards. Foreground Accessibility uses the actual screen geometry and does not need this setting. The saved orientation is persisted in settings and data archives.
 
 `agent_display` accepts a session-only `orientation` (`device`, `portrait`, `landscape`) on `start`/`launch` in Virtual Display mode:
 
