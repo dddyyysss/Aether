@@ -38,6 +38,7 @@ google-services.json
 .agents/
 .claude/
 .kiro/
+.serena/
 .trash/
 reports/
 *-report.md
