@@ -49,7 +49,8 @@ internal fun buildPiAgentInstructions(
     }
     if (chromeEnabled) {
         append(
-            "\n\nThe chat has enabled the browser tool (Chrome Extension tool). Prefer selectors and DOM-reading actions, and use coordinates only as a fallback."
+            "\n\nThe chat has enabled the browser tool (Chrome Extension tool). Prefer selectors and DOM-reading actions, and use coordinates only as a fallback." +
+                "\n\nTo inspect loaded page resources or captured network traffic, use the browser tool's list_resources, get_resource, list_requests, and get_request actions instead of re-fetching URLs."
         )
     }
 }
