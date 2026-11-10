@@ -1919,44 +1919,24 @@
 
     <string name="settings_native_mod_disable_next_start">В следующий раз запустить в безопасном режиме нативных модов</string>
 
-    <!-- iOS shell labels; the corresponding Android screen is not yet shared. -->
-    <string name="onboarding_title">Aether</string>
+    
 
-    <string name="onboarding_subtitle">Взлетай с локальным ИИ.</string>
 
-    <string name="alpine_title">Alpine</string>
 
-    <string name="alpine_preparing">Подготовка локальной среды выполнения</string>
 
-    <string name="alpine_ready">Alpine готов</string>
 
-    <string name="alpine_setup_step_progress">Шаг %1$d/5 - %2$d%%</string>
 
-    <string name="runtime_setup_details">Сведения</string>
 
-    <string name="runtime_setup_details_title">Сведения об установке</string>
 
-    <string name="runtime_setup_waiting_for_output">Ожидание вывода установки...</string>
 
-    <string name="continue_label">Продолжить</string>
 
-    <string name="retry_label">Повторить</string>
 
-    <string name="new_chat">Новый чат</string>
 
-    <string name="message_hint">Сообщение Aether</string>
 
-    <string name="providers_title">Провайдеры</string>
 
-    <string name="skills_title">Навыки</string>
 
-    <string name="extensions_title">Расширения</string>
 
-    <string name="alpine_runtime_title">Среда выполнения Alpine</string>
 
-    <string name="about_title">О приложении</string>
-
-    <string name="runtime_error">Локальная среда выполнения недоступна</string>
 
     <string name="get_started">Начать</string>
 
@@ -1966,97 +1946,51 @@
 
     <string name="back_label">Назад</string>
 
-    <string name="menu_label">Меню</string>
 
-    <string name="send_label">Отправить</string>
 
-    <string name="automatic_model">Автоматически</string>
 
-    <string name="chat_analyze_image">Анализировать изображение</string>
 
-    <string name="chat_code">Код</string>
 
-    <string name="chat_help_write">Помочь написать</string>
 
-    <string name="chat_summarize_file">Резюмировать файл</string>
 
-    <string name="chat_add_attachment">Добавить вложение или инструмент</string>
 
-    <string name="chat_history">Чаты</string>
 
-    <string name="search_chats">Поиск чатов</string>
 
-    <string name="today_label">Сегодня</string>
 
-    <string name="general_title">Основные</string>
 
-    <string name="general_subtitle">Язык, внешний вид и поведение приложения</string>
 
-    <string name="personalization_title">Персонализация</string>
 
-    <string name="personalization_subtitle">Пользовательские инструкции и предпочтения</string>
 
-    <string name="reliability_title">Надежность</string>
 
-    <string name="reliability_subtitle">Поведение переподключения и истории</string>
 
-    <string name="providers_subtitle">Настройка моделей и аутентификации</string>
 
-    <string name="skills_subtitle">Установленные навыки агента</string>
 
-    <string name="extensions_subtitle">Скриптовые расширения Pi и Aether</string>
 
-    <string name="alpine_subtitle">Готово к терминалу, Node и локальным инструментам</string>
 
-    <string name="terminal_title">Терминал</string>
 
-    <string name="terminal_subtitle">Оболочка Alpine</string>
 
-    <string name="statistics_subtitle">Использование, токены и скорость ответа</string>
 
-    <string name="tour_title">Обучающий тур</string>
 
-    <string name="tour_subtitle">Повторить настройку Aether</string>
 
-    <string name="developer_title">Для разработчиков</string>
 
-    <string name="developer_subtitle">Диагностика и обслуживание среды выполнения</string>
 
-    <string name="about_subtitle">Aether для iOS</string>
 
-    <string name="settings_ios_background_note">iOS предоставляет лишь короткое окно работы в фоновом режиме для уже выполняющейся сессии. Aether сохраняет частичный вывод и позволяет повторить истекшую сессию.</string>
 
-    <string name="settings_app_store_checking">Проверка App Store</string>
 
-    <string name="settings_app_store_update_available">В App Store доступна версия %1$s</string>
 
-    <string name="settings_app_store_current">Aether обновлен до последней версии в App Store</string>
 
-    <string name="settings_app_store_unpublished">Этот пакет еще не опубликован в App Store</string>
 
-    <string name="settings_open_app_store">Открыть App Store</string>
 
-    <string name="settings_update_check_failed_short">Не удалось проверить наличие обновлений</string>
 
-    <string name="settings_total_tokens_value">Всего токенов: %1$s</string>
 
-    <string name="settings_recorded_turns_value">Записано сессий: %1$d</string>
 
-    <string name="settings_data_imported">Данные приложения импортированы</string>
 
-    <string name="settings_data_exported">Данные приложения экспортированы</string>
 
-    <string name="settings_data_import_failed">Не удалось импортировать настройки</string>
 
-    <string name="settings_data_export_failed">Не удалось открыть панель общего доступа</string>
 
-    <string name="settings_app_data_share_title">Данные приложения Aether</string>
 
-    <string name="settings_app_data_export_filename">aether-data.json</string>
 
-    <string name="settings_author_name">Zhou-Shilin</string>
 
-    <string name="statistics_average_turn">Средняя сессия</string>
 
     <string name="statistics_cached_input">Чтение из кэша</string>
 
@@ -2064,33 +1998,19 @@
 
     <string name="statistics_cache_tokens">Токены кэша</string>
 
-    <string name="statistics_token_share_value">%1$s · %2$d%%</string>
 
-    <string name="runtime_setup_message">Давайте подготовим рабочую область Alpine, используемую локальными инструментами Aether.</string>
 
-    <string name="runtime_setup_ready_message">Alpine, Node 22 и локальная рабочая область готовы.</string>
 
-    <string name="common_stop">Остановить</string>
 
-    <string name="file_manager_title">Файлы</string>
 
-    <string name="file_manager_open">Открыть</string>
 
-    <string name="file_manager_create_file">Новый файл</string>
 
-    <string name="file_manager_create_folder">Новая папка</string>
 
-    <string name="file_manager_rename">Переименовать</string>
 
-    <string name="file_manager_delete">Удалить</string>
 
-    <string name="file_manager_new_name">Имя</string>
 
-    <string name="file_manager_empty">Эта папка пуста</string>
 
-    <string name="file_manager_view_grid">Вид: Сетка</string>
 
-    <string name="file_manager_view_list">Вид: Список</string>
 
     <string name="common_confirm">Подтвердить</string>
 

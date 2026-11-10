@@ -17,7 +17,7 @@ object AndroidShowcase {
     private var catalog: List<PersistedChatSession>? = null
 
     suspend fun catalog(): List<PersistedChatSession> = mutex.withLock {
-        catalog ?: ShowcaseCatalog.load(android = true).also { catalog = it }
+        catalog ?: ShowcaseCatalog.load().also { catalog = it }
     }
 
     fun convert(session: PersistedChatSession): ChatSession = parseChatSessions(

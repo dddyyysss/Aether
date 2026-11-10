@@ -1,6 +1,4 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import java.util.Properties
-import groovy.json.JsonOutput
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -18,19 +16,6 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_17)
         }
     }
-    iosArm64()
-    iosSimulatorArm64()
-
-    targets.withType<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget>().configureEach {
-        binaries.all {
-            freeCompilerArgs += "-Xoverride-konan-properties=minVersion.ios=17.0"
-        }
-        binaries.framework {
-            baseName = "AetherShared"
-            isStatic = true
-        }
-    }
-
     sourceSets {
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -54,9 +39,6 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
         }
-        iosMain.dependencies {
-            implementation(libs.ktor.client.darwin)
-        }
         commonTest.dependencies {
             implementation(kotlin("test"))
             implementation(libs.kotlinx.coroutines.core)
@@ -68,8 +50,6 @@ kotlin {
 
 dependencies {
     add("kspAndroid", libs.androidx.room.compiler)
-    add("kspIosArm64", libs.androidx.room.compiler)
-    add("kspIosSimulatorArm64", libs.androidx.room.compiler)
 }
 
 room {
@@ -94,23 +74,4 @@ compose.resources {
     publicResClass = true
     packageOfResClass = "com.zhousl.aether.shared.resources"
     generateResClass = always
-}
-
-tasks.register("generateIosPostHogConfig") {
-    val output = layout.buildDirectory.file("generated/posthog/PostHogConfig.json")
-    outputs.file(output)
-    outputs.upToDateWhen { false }
-    doLast {
-        val local = Properties()
-        rootProject.file("local.properties").takeIf { it.exists() }?.inputStream()?.use(local::load)
-        val config = mapOf(
-            "apiKey" to (System.getenv("POSTHOG_API_KEY") ?: local.getProperty("posthog.apiKey", "")).trim(),
-            "host" to (System.getenv("POSTHOG_HOST") ?: local.getProperty("posthog.host", ""))
-                .trim().ifBlank { "https://us.i.posthog.com" },
-        )
-        output.get().asFile.apply {
-            parentFile.mkdirs()
-            writeText(JsonOutput.toJson(config))
-        }
-    }
 }

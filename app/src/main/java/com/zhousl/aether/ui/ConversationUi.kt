@@ -3071,8 +3071,7 @@ private fun ComposerPauseButton(
 
 /**
  * Light confirmation tick when a message actually goes out (not for queue or
- * steer follow-ups). Mirrors the iOS composer's light impact; the system
- * touch-feedback setting still applies.
+ * steer follow-ups). The system touch-feedback setting still applies.
  */
 private fun performComposerSendHaptic(view: View) {
     val feedback = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {

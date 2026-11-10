@@ -27,7 +27,7 @@ val BuiltInAgentSkills: List<BuiltInAgentSkill> = listOf(
 
             ## Choose the extension surface
 
-            - Use the Aether Script Extension API for native mobile UI, settings pages, composer widgets, message renderers, state, storage, actions, events, and interceptors. Script Extensions work on Android and iOS and reload without restarting the app.
+            - Use the Aether Script Extension API for native mobile UI, settings pages, composer widgets, message renderers, state, storage, actions, events, and interceptors. Script Extensions reload without restarting the app.
             - Add a standard Pi extension entry when the customization needs Agent tools, commands, hooks, or other Pi Coding Agent behavior. One package may expose both Pi and Aether entries from the same TypeScript file.
             - Use an Android Native Mod only when the user explicitly needs Android-only APIs that the Script API cannot provide. Native Mods are Android-only, trusted code, and require an app restart, so they do not satisfy a cross-platform or uninterrupted customization request.
 

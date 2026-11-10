@@ -111,7 +111,7 @@ class SharedSkillManagerTest {
             description: >
               Review a change carefully
               and report concrete findings.
-            compatibility: iOS and Android
+            compatibility: Android
             license: MIT
             allowed-tools:
               - read_file
@@ -123,7 +123,7 @@ class SharedSkillManagerTest {
 
         assertEquals("Review", metadata.name)
         assertEquals("Review a change carefully and report concrete findings.", metadata.description)
-        assertEquals("iOS and Android", metadata.compatibility)
+        assertEquals("Android", metadata.compatibility)
         assertEquals("MIT", metadata.license)
         assertEquals(listOf("read_file", "search_files"), metadata.allowedTools)
     }

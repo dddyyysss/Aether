@@ -1,6 +1,6 @@
 package com.zhousl.aether.data.pi
 
-/** Served by the existing noVNC origin so ES modules have the correct origin on WKWebView. */
+/** Served by the existing noVNC origin so its ES modules resolve against the right origin. */
 val AgentBrowserObserverHtml = """
 <!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1">
 <style>html,body,#screen{margin:0;width:100%;height:100%;background:#101114;overflow:hidden}

@@ -8,7 +8,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 
-// Shared Aether surfaces use the same vendored Lucide outlines on Android and iOS.
+// Shared Aether surfaces use the vendored Lucide outlines.
 object LucideIcons {
     val Clock8: ImageVector by lazy {
         ImageVector.Builder("clock-8", 24.dp, 24.dp, 24f, 24f).apply {

@@ -15,8 +15,8 @@ object ShowcaseCatalog {
     fun isSession(id: String) = id.startsWith(sessionPrefix)
 
     @OptIn(ExperimentalResourceApi::class)
-    suspend fun load(android: Boolean): List<PersistedChatSession> = Json.decodeFromString(
-        Res.readBytes("files/showcase/${if (android) "catalog" else "catalog-ios"}.json").decodeToString(),
+    suspend fun load(): List<PersistedChatSession> = Json.decodeFromString(
+        Res.readBytes("files/showcase/catalog.json").decodeToString(),
     )
 
     fun providers(): List<LlmProviderConfig> = listOf(

@@ -25,7 +25,7 @@ import kotlinx.serialization.json.intOrNull
 import kotlinx.serialization.json.jsonPrimitive
 import kotlinx.serialization.json.put
 
-/** Aether-owned host tools shared by Android and iOS. */
+/** Aether-owned host tools. */
 class SharedAgentManagementTools(
     private val runtime: MultiplatformLocalRuntime,
     private val bridge: SharedPiBridgeClient,
